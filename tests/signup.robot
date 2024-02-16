@@ -1,6 +1,8 @@
 *** Settings ***
 Documentation           Testes de cadastro de usuários
 
+Default Tags            signup
+
 Resource                ../resources/base.resource
 
 Test Setup              Run Keywords    Start Test    AND    Start Registration
@@ -41,6 +43,8 @@ Deve validar CEP inválido
     Alert Message Should Be    Informe um CEP válido
 
 Deve validar os campos obrigatórios
+    [Tags]                     signup    required-fields
+
     ${messages}                Create Dictionary
     ...                        nome=É necessário informar o nome
     ...                        cpf=É necessário informar o CPF

@@ -1,6 +1,8 @@
 *** Settings ***
 Documentation           Testes na Home Page
 
+Default Tags            home
+
 Resource                ../resources/base.resource
 
 Test Setup              Start Test
