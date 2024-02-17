@@ -1,4 +1,4 @@
-name: Robot Framework Tests - BrowserStack
+name: Robot Framework Tests
 
 on:
 
@@ -16,14 +16,8 @@ jobs:
     - name: Install dependencies ➕➕ 
       run: pip install -r requirements.txt
 
-    - name: BrowserStack Env Setup 🔧🔧
-      uses: browserstack/github-actions/setup-env@master
-      with:
-        username:  ${{ secrets.BROWSERSTACK_USERNAME }}
-        access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
-
     - name: Run tests 🧪🧪
-      run: browserstack-sdk robot -d ./reports -e ignore-bs tests/
+      run: robot -d ./reports -v BROWSER:headlesschrome tests/
 
     - name: Upload Reports 📖📖
       uses: actions/upload-artifact@v3

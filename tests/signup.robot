@@ -10,6 +10,8 @@ Test Teardown           Finish Test
 
 *** Test Cases ***
 Deve registrar o usuário como entregador
+    [Tags]                     ignore-bs
+
     Fill Form
     Select Vehicle Type        Moto
     Upload CNH

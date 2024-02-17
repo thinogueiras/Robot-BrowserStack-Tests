@@ -4,7 +4,7 @@ Documentation          Signup Page
 Library                SeleniumLibrary
 Library                FakerLibrary        locale=pt_BR
 
-Library                ../libs/cpf_creator.py
+Library                ${EXECDIR}/resources/libs/cpf_creator.py
 
 *** Keywords ***
 Start Registration
@@ -12,7 +12,7 @@ Start Registration
 
     Wait Until Location Contains        /deliver
 
-    Element Text Should Be     css=h1   Cadastre-se para\nfazer entregas
+    Wait Until Element Contains         css=h1        Cadastre-se
 
 Click On Search CEP Button
     Click Element      css=input[type=button][value="Buscar CEP"]

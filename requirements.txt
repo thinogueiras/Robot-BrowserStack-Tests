@@ -2,6 +2,7 @@ robotframework
 robotframework-seleniumlibrary
 robotframework-faker
 robotframework-pabot
-browserstack-local
+cpf-generator
 selenium
+Faker
 browserstack-sdk
