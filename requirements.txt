@@ -1,3 +1,7 @@
 robotframework
 robotframework-seleniumlibrary
 robotframework-faker
+robotframework-pabot
+browserstack-local
+selenium
+browserstack-sdk
