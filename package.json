@@ -4,7 +4,8 @@
     "description": "Projeto de testes E2E com Robot Framework e Selenium WebDriver",
     "scripts": {
         "test:chrome": "robot -d ./logs -v BROWSER:chrome tests/",
-        "test:chrome:headless": "robot -d ./logs -v BROWSER:headlesschrome tests/"
+        "test:chrome:headless": "robot -d ./logs -v BROWSER:headlesschrome tests/",
+        "test:browserstack": "browserstack-sdk robot -d ./reports -e ignore-bs tests/"
     },
     "keywords": [
         "RobotFramework",
@@ -13,6 +14,7 @@
         "Web-Testing",
         "E2E-Tests",
         "Test-Automation",
+        "BrowserStack",
         "Python"
     ],
     "author": "Thiago Nogueira dos Santos",
