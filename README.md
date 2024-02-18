@@ -1,8 +1,12 @@
 # Projeto de testes E2E com Robot Framework e Selenium WebDriver.
 
+[![Robot Framework Tests](https://github.com/thinogueiras/Robot-BrowserStack-Tests/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/thinogueiras/Robot-BrowserStack-Tests/actions/workflows/ci.yml) [![BrowserStack Tests](https://github.com/thinogueiras/Robot-BrowserStack-Tests/actions/workflows/browserstack-ci.yml/badge.svg?branch=main)](https://github.com/thinogueiras/Robot-BrowserStack-Tests/actions/workflows/browserstack-ci.yml)
+
 ## Pré-requisitos mínimos de ambiente:
 
 * [Python](https://www.python.org/downloads/) 3.10.12.
+
+* [Node.js](https://nodejs.org/en) 18.17.1.
 
 ## Instalação do projeto:
 
@@ -10,24 +14,37 @@
 pip install -r requirements.txt
 ```
 
-## Execução dos testes 🤖 🤖
+## Setup BrowserStack (Opcional):
+
+```
+browserstack-sdk setup --framework "robot" --username "<YOUR_BROWSERSTACK_USERNAME>" --key "<YOUR_BROWSERSTACK_ACCESS_KEY>"
+```
+
+## Execução dos testes - Local 🤖 🤖
 
 * ### Normal:
 
     ```
-    robot -d ./logs tests/
+    robot -d ./reports tests/
     ```
 
 *   ### Headless:
 
     ```
-    robot -d ./logs -v BROWSER:headlesschrome tests/
+    robot -d ./reports -v BROWSER:headlesschrome tests/
     ```
+
+## Execução dos testes - BrowserStack 🤖 🤖
+
+*   ```
+    browserstack-sdk robot -d ./reports -e ignore-bs tests/
+    ```
+
 ---
 
 ## Relatórios 📝 📄
 
-Verifique a pasta `logs` para visualizar os <b>relatórios</b> da execução: `report.html` ou `log.html`.
+Verifique a pasta `reports` para visualizar os <b>relatórios</b> da execução: `report.html` ou `log.html`.
 
 ---
 
