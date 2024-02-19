@@ -48,6 +48,22 @@ Verifique a pasta `reports` para visualizar os <b>relatórios</b> da execução:
 
 ---
 
+## Sobre a integração com o BrowserStack:
+
+<p>
+    <img src=".github/images/browserstack.png" width="375px">
+</p>
+
+### Execuções disparadas automaticamente pelo pipeline do GitHub Actions:
+
+![alt text](.github/images/image-0.png)
+
+### Observabilidade dos Testes:
+
+![alt text](.github/images/image-1.png)
+
+---
+
 <a href="https://www.linkedin.com/in/thinogueiras"><img alt="Linkedin" src="https://img.shields.io/badge/-LinkedIn-blue?style=for-the-badge&logo=Linkedin&logoColor=white"></a>
 
 <strong>Thiago Nogueira dos Santos</strong> 🤓 ✌🏻
