@@ -1,12 +1,12 @@
 # Projeto de testes E2E com Robot Framework e Selenium WebDriver.
 
-[![Robot Framework Tests](https://github.com/thinogueiras/Robot-BrowserStack-Tests/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/thinogueiras/Robot-BrowserStack-Tests/actions/workflows/ci.yml) [![BrowserStack Tests](https://github.com/thinogueiras/Robot-BrowserStack-Tests/actions/workflows/browserstack-ci.yml/badge.svg?branch=main)](https://github.com/thinogueiras/Robot-BrowserStack-Tests/actions/workflows/browserstack-ci.yml)
+[![Robot Framework Tests](https://github.com/thinogueiras/Robot-Selenium-BrowserStack/actions/workflows/continuous-testing.yml/badge.svg?branch=main)](https://github.com/thinogueiras/Robot-Selenium-BrowserStack/actions/workflows/continuous-testing.yml) [![BrowserStack Tests](https://github.com/thinogueiras/Robot-Selenium-BrowserStack/actions/workflows/browserstack-testing.yml/badge.svg?branch=main)](https://github.com/thinogueiras/Robot-Selenium-BrowserStack/actions/workflows/browserstack-testing.yml)
 
 ## Pré-requisitos mínimos de ambiente:
 
-* [Python](https://www.python.org/downloads/) 3.10.12.
+* [Python](https://www.python.org/downloads/) 3.11.x.
 
-* [Node.js](https://nodejs.org/en) 18.17.1.
+* [Node.js](https://nodejs.org/en) 18.17.x.
 
 ## Instalação do projeto:
 
