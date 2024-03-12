@@ -7,12 +7,11 @@ Resource               pages/HomePage.robot
 Resource               pages/SignupPage.robot
 
 *** Variables ***
-${BASE_URL}            https://buger-eats-qa.vercel.app
 ${BROWSER}             chrome
 
 *** Keywords ***
 Start Test
-    Open Browser       url=${BASE_URL}
+    Open Browser       url=https://buger-eats-qa.vercel.app
     ...                browser=${BROWSER}
 
     Set Selenium Implicit Wait    15

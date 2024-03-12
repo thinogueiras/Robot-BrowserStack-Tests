@@ -10,7 +10,7 @@ Library                ${EXECDIR}/resources/libs/cpf_creator.py
 Start Registration
     Click Element      css=a[href="/deliver"]
 
-    Wait Until Location Contains        /deliver
+    Wait Until Location Contains        /deliver      timeout=15
 
     Wait Until Element Contains         css=h1        Cadastre-se
 
